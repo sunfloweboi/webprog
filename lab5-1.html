@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css"></style>
+
+    <head>
+        <link rel="stylesheet" href="lab5style.css">
+        <meta charset = "utf-8">
+        <title>My Form</title>
+        <script src="http://161.246.5.61/Lab.js"></script>
+           
+    </head>
+
+    <body class="container">
+    <form>
+        <div class="center"> <u>Personal information</u></div>
+        <div class="flex">
+            <div class="left"> <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" width="100" height="100"  > </div>
+            <div class="right">
+                <label>Name</label><br>
+                <input id = "name" name = "name" type = "text" size="25" maxlength ="30" placeholder="Name"><br><br>
+                <label for ="Age">Age 0 - 100:<br>
+                    <input id= "age" name="age" type="range"  min="0" max="100" onchange = "updateAgeValue()">
+                    <span id="ageValue">0</span>
+                
+               
+            
+            </div>
+        
+        </div>
+        <div class="flex">
+            <div class="left">
+                <label>profile</label><br>
+                <textarea id="profile" name="profile" rows="4" cols="25"></textarea>
+            </div>
+            <div class="right">
+                <label>Email</label><br>
+                <input id="email" name="email" type="email" size="25" maxlength="30" placeholder="email"><br><br>
+                <label>Phone</label><br>
+                <input id="phone" name="phone" type="tel" size="25" maxlength="30" placeholder="phone">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="left">
+                <br><br>
+                <label>Adress</label>
+                <br>
+                <input id="street" name="address1" type="text" size="25" maxlength="30" placeholder="address1">
+                <br>
+                <input id="city" name="address2" type="text" size="25" maxlength="30" placeholder="address2">
+                <br>
+                <select id="country">
+                    <option value="">Select a country</option>
+                            <script>
+                                populateCountries("country");
+                            </script>
+                </select>
+            </div>
+            <div class="right">
+                <p><u>Education</u></p>
+                <br>
+                <label>University</label><br>
+                <input id="university" name="university" type="text" size="25" maxlength="30" placeholder="university">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="left"></div>
+            <div class="right">
+                <label>Degree:</label><br>
+                <input id="degree" name="degree" type="text" placeholder="Bachelor"><br><br>
+                <label>Year of Graduation</label><br>
+                <input id="graduationYear"  type="date" size="25" maxlength="30" placeholder="year">
+            </div>
+        </div>
+        <div class="flex">
+            <div class="left">
+                <label>references</label><br>
+                <textarea id="ref" name="references" rows="4" cols="25"></textarea>
+            </div>
+            <div class="right">
+                <label>Skills</label><br>
+                <textarea id="skills" name="skills" rows="4" cols="50"></textarea>
+            </div>
+        </div> 
+        <div class="flex">
+            <div class="left">
+                <label>Favourite Colour:</label><br>
+                <input type="color" id="favColour" name="favcolor" value="#000000"> 
+            </div>
+            <div class="right">
+                <label>Experience</label>
+                <br>
+                <textarea id="experience" name="Experience" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+        <button onclick="displayResume()"> Submit </button>
+    </form>
+    </body>
+   
+</html>

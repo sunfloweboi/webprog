@@ -1,0 +1,110 @@
+table, th{
+    border:1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-style: hidden;
+  }
+  
+  td{
+    font-size: 12px;
+    font-family:papyrus;
+    color:green;
+
+  }
+  p {
+    font-size: 12px;
+    font-family:arial, sans-serif;
+  }
+  .colorful{color:purple}
+
+  label:hover {
+    color: #FF00FF;
+  }
+
+  .flex {
+    
+    width:100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left {
+    max-width :250px;
+    width: 35%; 
+    height: 100px; 
+    float: left;
+    text-align: center;
+  }
+
+  .right{
+    margin-left: 65%; 
+    height: 100px;
+    margin-left: 20px;
+    
+
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border: 1px solid black;
+    
+
+  }
+
+  @media (max-width: 700px) {
+    .flex {
+      flex-direction: column;
+    }
+    .right, .left {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      text-align: center;
+      max-width: none;
+    }
+
+    
+}
+
+    @media (min-height: 800px){
+        img{ 
+            width: 150px;
+            height: 150px;
+
+
+        }
+    }
+
+
+    @media (max-width: 600px){
+        label{
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 900px){
+        div{
+            height: 200px;
+        }
+        
+        label{
+            font-size: 26px;
+        }
+    }
+
+    @media (max-width: 900px) and (min-width: 600){
+        label{
+            font-size: 20px;
+            
+        }
+    }
+        
